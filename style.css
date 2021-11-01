@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+/* @ © Copyright IGORAZA. All Rights Reserved Designed by IGORAZA*/
+/*Gowrishaankarvv*/
+/*https://github.com/Gowrishankarvv*/
+/*start*/
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection {
+    background: var(--color);
+    color: rgb(228, 17, 17);
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+}
+html::-webkit-scrollbar {
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track {
+    background: rgb(156, 31, 9);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--color);
+}
+body {
+    width: 100%;
+    height: 100vh;
+   background: rgb(240, 245, 245);
+   
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+.btn {
+    padding: .7rem 3rem;
+    background: rgb(4, 23, 71);
+    color: rgb(5, 228, 180);
+    border: 2px solid #19b4a0b6;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.btn i {
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+.btn:hover {
+    background: var(--color);
+}
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid rgb(233, 14, 14);
+    color: rgb(28, 5, 129);
+    font-weight: 600;
+}
+.heading span {
+    color: var(--color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* Header Section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: url("images/firstbggg.jpg") 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .user img {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--color);
+}
+header .user .name {
+    font-size: 3.5rem;
+    color: rgb(142, 222, 228);
+}
+header .user .post {
+    font-size: 2rem;
+    color: rgb(119, 12, 241);
+}
+header .navbar {
+    width: 100%;
+}
+header .navbar ul {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    color: rgb(4, 255, 180);
+    background: #020e42fd;
+    border: 2px solid #04fdfd;
+    font-size: 2rem;
+    
+    border-radius: 5rem;
+
+}
+header .navbar ul li a:hover {
+    background: var(--color);
+}
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: rgb(255, 5, 46);
+    color: rgb(27, 240, 8);
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+
+
+
+/* Home Section Starts */
+
+.home {
+    background: url("images/backgrounf.jpg") ;
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+
+}
+
+
+
+
+
+.home h3 {
+    font-size: 2.5rem;
+    color: rgb(148, 163, 206);
+}
+.home h1 {
+    font-size: 5rem;
+    color: rgb(241, 8, 86);
+}
+.home h1 span {
+    color: var(--color);
+}
+.home h6{
+    font-size: 2rem;
+    color: rgb(12, 211, 211);
+    padding: 1rem 0;
+}
+.home p{
+    font-size: 2rem;
+    color: rgb(12, 32, 211);
+    padding: 1rem 0;
+}
+/* Home Section Ends */
+
+/* About Section Starts */
+
+.about .row {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+.about .row .info h3 {
+    font-size: 2rem;
+    color: var(--color);
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.about .row .info h3 span {
+    color: #222;
+    padding: 0 .5rem;
+}
+.about .row .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box {
+    width: 20rem;
+    background: rgba(115, 147, 151, 0.61);
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    border: 2px solid #030405;
+}
+.about .row .counter .box span {
+    font-size: 4rem;
+    color: var(--color);
+}
+.about .row .counter .box h3 {
+    font-size: 2rem;
+    color: rgb(223, 11, 99);
+}
+
+/* About Section Ends */
+
+/* Education Section Starts */
+
+.education .box-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    background: url("images/backgrounf.jpg") ;
+    
+   
+    
+}
+.education .box-container .box {
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid rgb(228, 9, 100);
+    position: relative;
+}
+.education .box-container .box span {
+    font-size: 1.3rem;
+    background: rgb(2, 2, 15);
+    color: rgb(6, 247, 255);
+    border: 2px solid #db0dc0;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+.education .box-container .box h3 {
+    font-size: 2rem;
+    color: rgb(131, 196, 28);
+    padding-top: 1.5rem;
+}
+.education .box-container .box p {
+    font-size: 1.4rem;
+    color: rgb(30, 202, 179);
+    padding: 1rem 0;
+}
+.education .box-container .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    color: rgb(245, 8, 79);
+    text-align: center;
+    font-size: 2rem;
+    background: var(--color);
+}
+
+/* Education Section Ends */
+
+/* Portfolio Section Starts */
+
+.portfolio .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.portfolio .box-container .box {
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio .box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+/* Portfolio Section Ends */
+
+/* Contact Section Starts */
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #222;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+.contact .row form .box::placeholder {
+    text-transform: capitalize;
+}
+.contact .row form .message {
+    height: 15rem;
+    resize: none;
+}
+.contact .row .content .title {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: none;
+    color: #222;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+.contact .row .content .info h3 i {
+    padding-right: 1rem;
+    color: var(--color);
+}
+
+/* Contact Section Ends */
+
+/* Media Queries */
+
+ @media (max-width:1200px) {
+     html {
+         font-size: 55%;
+     }
+     .home {
+         padding: 1rem 4rem;
+     }
+ }
+ @media (max-width:991px) {
+     header {
+         left: -120%;
+     }
+     #menu {
+         display: block;
+     }
+     header.toggle {
+         left: 0%;
+     }
+     body {
+         padding: 0;
+     }
+ }
+ @media (max-width:768px) {
+     html {
+         font-size: 50%;
+     }
+ }
+@media (max-width:400px) {
+    header {
+        width: 100vw;
+    }
+    .heading {
+        margin: 0 3rem;
+    }
+    .about .row .counter .box {
+        width: 100%;
+    }
+    .education .box-container .box {
+        width: 100%;
+    }
+    .portfolio .box-container .box {
+        width: 100%;
+    }
+    .contact .row form {
+        margin: 3rem 0;
+    }
+}
+/*a tag link color */
+a{ 
+    color: rgb(18, 214, 181);
+}
+
+.heading2 {
+    text-align: center;
+    margin: 0 6rem;
+   
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid rgb(253, 5, 5);
+    color: rgb(241, 10, 79);
+    font-weight: 600;
+}
+
+.heading2 span {
+    color: var(--color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: #1c1b1f;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+    margin-bottom: 15px;
+  
+    
+    
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #36343dad;
+    color: rgb(250, 242, 242);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+
+  
+  .fa-twitter {
+    
+    color: #00acee ;
+   
+  }
+  
+  .fa-envelope-open {
+    
+    color: rgb(243, 233, 233); 
+   
+  }
+
+  .fa-globe {
+    
+    color: rgb(245, 243, 243);
+    
+  }
+  
+  .fa-linkedin {
+    background: #3c07fa;
+    color: rgb(241, 231, 231);
+    
+  }
+  
+
+  .fa-instagram {
+   
+    color: rgb(241, 6, 84);
+    
+  
+  }
+  
+
+
+
+  
+  #footer .footer-top .social-links a:hover {
+    background: #323135;
+    border: 2px solid #241e1e;
+    border-radius: 50%;
+
+    text-decoration: none;
+    
+  }
+  
+
+
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #ed5b5b;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    color: #eb4444;
+  }
+  
+  #footer .footer-top .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4;
+  }
+  
+  
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #09cefa;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 4;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+    background: #e82d2d;
+  }
+  
+  #footer .copyright {
+    border-top: 1px solid #f80657;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #footer .credits {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  #footer .credits a {
+    color: #e82d2d;
+  }
+  
+  @media (max-width: 575px) {
+    #footer .footer-top .footer-info {
+      margin: -20px 0 30px 0;
+    }
+  }
+
+/*link color github and cirtficates*/
+a.one:link {color:#ff00aa;}
+a.one:visited {color:#ff00b3;}
+a.one:hover {color:#ff00b3;}
+
+ /*The end*/
+  
+
+/*full completed*/
+/* @ © Copyright IGORAZA. All Rights Reserved Designed by IGORAZA*/
+/*Gowrishaankarvv*/
+/*https://github.com/Gowrishankarvv*/
+
